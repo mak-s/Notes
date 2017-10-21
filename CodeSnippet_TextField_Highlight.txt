@@ -1,0 +1,71 @@
+//Change text color when a row in tableview/outlineview is selected.
+
+// Custom class to change text color
+// when background style changes
+// when editing begins/ends
+class HighlighTableCellView: NSTableCellView {
+    
+    override var textField: NSTextField? {
+        didSet {
+            (textField as? HightlightTextField)?.parent = self
+        }
+    }
+    
+    weak var firstResponder:NSResponder? = nil
+    
+    var isEditing:Bool = false {
+        didSet {
+            if isEditing {
+                firstResponder = self.window?.firstResponder
+                textField?.textColor = defaultTextColor
+            } else {
+                firstResponder = nil
+                textField?.textColor = (backgroundStyle == .dark) ? selectedTextColor : defaultTextColor
+            }
+        }
+    }
+    
+    // text color when background style is not dark
+    var defaultTextColor:NSColor? = NSColor.controlTextColor {
+        didSet {
+            self.textField?.textColor = defaultTextColor
+        }
+    }
+
+    // text color when backgroundStyle is dark
+    var selectedTextColor:NSColor = NSColor.white
+    
+    override var backgroundStyle: NSView.BackgroundStyle {
+        didSet {
+            if let window = self.window, window.isKeyWindow {
+                if isEditing {
+                    if let firstResponder = self.firstResponder, window.firstResponder == firstResponder {
+                        return
+                    }
+                }
+                isEditing = false
+            }
+        }
+    }
+}
+
+class HightlightTextField: NSTextField {
+    
+    weak var parent: HighlighTableCellView? = nil
+    
+    override func becomeFirstResponder() -> Bool {
+        let success = super.becomeFirstResponder()
+        if success {
+            parent?.isEditing = true
+        }
+        return success
+    }
+    
+    override func resignFirstResponder() -> Bool {
+        let success = super.resignFirstResponder()
+        if success {
+            parent?.isEditing = false
+        }
+        return success
+    }
+}
