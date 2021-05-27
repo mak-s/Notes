@@ -6,6 +6,16 @@
 [Structure](#structures)
 
 [Inheritance](#inheritance)
+- [Cancellable](#cancellable)
+- [AnyObject](#anyobject)
+- [CustomCombineIdentifierConvertible](#customCombineIdentifierConvertible)
+- [Hashable](#hashable)
+- [Codable](#codable)
+- [Scheduler](#scheduler)
+- [Strideable](#strideable)
+- [SchedulerTimeIntervalConvertible](#schedulerTimeIntervalConvertible)
+- [Publisher](#publisher)
+
 
 ---
 
@@ -169,16 +179,20 @@ ImmediateScheduler.Stride
 
 Type inheritance in Combine
 
+
+### Cancellable
 ```
 Cancellable
 - AnyCancellable
 ```
 
+### AnyObject
 ```
 AnyObject
 - ObservableObject
 ```
 
+### CustomCombineIdentifierConvertible
 ```
 CustomCombineIdentifierConvertible
 - Subscriber
@@ -186,11 +200,13 @@ CustomCombineIdentifierConvertible
 - Subscription
 ```
 
+### Hashable
 ```
 Hashable
 - CombineIdentifier
 ```
 
+### Codable
 ```
 Codable
 - Subscribers.Demand
@@ -203,21 +219,25 @@ AnyPublisher<Output, Failure>                 // frozen
 AnySubscriber<Input, Failure>                 // frozen
 ```
 
+### Scheduler
 ```
 Scheduler
 - ImmediateScheduler
 ```
 
+### Strideable
 ```
 Strideable
 - ImmediateScheduler.SchedulerTimeType
 ```
 
+### SchedulerTimeIntervalConvertible
 ```
 SchedulerTimeIntervalConvertible
 - ImmediateScheduler.Stride
 ```
 
+### Publisher
 ```
 Publisher
 - Subject
