@@ -1,6 +1,15 @@
+
+[Protocols](#protocol)
+
+[Enums](#enums)
+
+[Structure](#structures)
+
+[Inheritance](#inheritance)
+
 ---
 
-### PROTOCOL
+### Protocol
 
 Protocols in Combine
 
@@ -156,7 +165,7 @@ ImmediateScheduler.Stride
 
 ---
 
-### Inheritance
+# Inheritance
 
 Type inheritance in Combine
 
