@@ -1,6 +1,7 @@
 
 [Classes](#classes)
 [Enums](#enums)
+[Protocols](#protocols)
 [Structures](#structures)
 
 # Classes
