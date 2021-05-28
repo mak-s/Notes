@@ -1,134 +1,24 @@
 
-[Classes](#classes)
-[Enums](#enums)
 [Protocols](#protocols)
+
+[Function Builder](#function-builder)
+
+[Classes](#classes)
+
+[Enums](#enums)
+
 [Structures](#structures)
+
 [Inheritance](#inheritance)
-
-# Classes
-
-open class UIHostingController<Content> : UIViewController where Content : View
-
----
-
-# Enums
-
-```swift
-@frozen enum AccessibilityLabeledPairRole
-@frozen enum Axis : Int8, CaseIterable, CustomStringConvertible, Equatable, Hashable,: RawRepresentable
-```
-
-```swift
-@frozen enum ContentMode : Hashable, CaseIterable
-```
-
-```swift
-@frozen enum Edge : Int8, CaseIterable, Equatable, Hashable, RawRepresentable
-```
-
-```swift
-@frozen enum ExclusiveGesture.Value: Equatable where First.Value : Equatable, Second.Value : Equatable
-```
-
-```swift
-@frozen enum Image.Orientation : UInt8, CaseIterable, Hashable, RawRepresentable
-```
-
-```swift
-@frozen enum Path.Element : Equatable
-```
-
-```swift
-@frozen enum SequenceGesture.Value
-```
-
-```swift
-@frozen enum TextAlignment : Hashable, CaseIterable
-```
-
-```swift
-enum AccessibilityAdjustmentDirection: Equatable, Hashable
-```
-
-```swift
-enum BlendMode: Equatable, Hashable
-```
-
-```swift
-enum Color.RGBColorSpace : Equatable, Hashable
-enum ColorRenderingMode : Equatable, Hashable
-enum ColorSchemeContrast : CaseIterable, Equatable, Hashable
-enum ColorScheme : CaseIterable, Equatable, Hashable
-enum ContentSizeCategory : Hashable, CaseIterable
-enum CoordinateSpace : Equatable, Hashable
-```
-
-```swift
-enum DropOperation : Equatable, Hashable
-```
-
-```swift
-enum EditMode: Equatable, Hashable
-```
-
-```swift
-enum Font.TextStyle : CaseIterable, Equatable, Hashable
-enum Font.Leading: Equatable, Hashable
-enum Font.Design : Hashable
-```
-
-```swift
-enum GridItem.Size
-```
-
-```swift
-enum Image.TemplateRenderingMode: Equatable, Hashable
-enum Image.Scale: Equatable, Hashable
-enum Image.Interpolation: Equatable, Hashable
-enum Image.ResizingMode: Equatable, Hashable
-```
-
-```swift
-enum LayoutDirection : Hashable, CaseIterable
-enum LegibilityWeight : Hashable
-```
-
-```swift
-enum NavigationBarItem.TitleDisplayMode : Equatable, Hashable
-enum NSUserActivity.TypedPayloadError : Error
-```
-
-```swift
-enum PopoverAttachmentAnchor
-enum PreviewLayout
-enum PreviewPlatform: Equatable, Hashable
-```
-
-```swift
-enum RoundedCornerStyle: Equatable, Hashable
-```
-
-```swift
-enum ScenePhase : Comparable, Hashable
-```
-
-```swift
-enum Text.TruncationMode: Equatable, Hashable
-enum Text.Case: Equatable, Hashable
-```
-
-```swift
-enum UserInterfaceSizeClass: Equatable, Hashable
-```
 
 - - - - - - - - 
 # Protocols
 
-```swift
+```
 protocol AlignmentID
 ```
 
-```swift
+```
 protocol Animatable
 extension Animatable where Self : VectorArithmetic
 extension Animatable where Self.AnimatableData == EmptyAnimatableData
@@ -137,57 +27,57 @@ protocol AnimatableModifier : Animatable, ViewModifier
 protocol App
 ```
 
-```swift
+```
 protocol ButtonStyle
 ```
 
-```swift
+```
 protocol Commands
 protocol CustomizableToolbarContent : ToolbarContent where Self.Body : CustomizableToolbarContent
 ```
 
-```swift
+```
 protocol DatePickerStyle
 protocol DropDelegate
 protocol DynamicProperty
 protocol DynamicViewContent : View
 ```
 
-```swift
+```
 protocol EnvironmentKey
 protocol EnvironmentalModifier : ViewModifier where Self.Body == Never
 ```
 
-```swift
+```
 protocol FileDocument
 protocol FocusedValueKey
 ```
 
-```swift
+```
 protocol GeometryEffect : Animatable, ViewModifier where Self.Body == Never
 protocol Gesture
 protocol GroupBoxStyle
 ```
 
-```swift
+```
 protocol IndexViewStyle
 protocol InsettableShape : Shape
 ```
 
-```swift
+```
 protocol LabelStyle
 protocol ListStyle
 ```
 
-```swift
+```
 protocol MenuStyle
 ```
 
-```swift
+```
 protocol NavigationViewStyle
 ```
 
-```swift
+```
 protocol PickerStyle
 protocol PreferenceKey
 extension PreferenceKey where Self.Value : ExpressibleByNilLiteral
@@ -200,11 +90,11 @@ protocol PrimitiveButtonStyle
 protocol ProgressViewStyle
 ```
 
-```swift
+```
 protocol ReferenceFileDocument : ObservableObject
 ```
 
-```swift
+```
 protocol Scene
 protocol Shape : Animatable, View
 
@@ -212,14 +102,14 @@ protocol ShapeStyle
 extension ShapeStyle where Self : View, Self.Body == _ShapeView<Rectangle, Self>
 ```
 
-```swift
+```
 protocol TabViewStyle
 protocol TextFieldStyle
 protocol ToggleStyle
 protocol ToolbarContent
 ```
 
-```swift
+```
 protocol UIViewControllerRepresentable : View where Self.Body == Never
 extension UIViewControllerRepresentable where Self.Coordinator == Void
 extension UIViewRepresentable where Self.Coordinator == Void
@@ -227,7 +117,7 @@ extension UIViewRepresentable where Self.Coordinator == Void
 protocol UIViewRepresentable : View where Self.Body == Never
 ```
 
-```swift
+```
 protocol VectorArithmetic : AdditiveArithmetic
 protocol View
 
@@ -235,16 +125,17 @@ protocol ViewModifier
 extension ViewModifier where Self.Body == Never
 ```
 
-```swift
+```
 protocol Widget
 protocol WidgetBundle
 protocol WidgetConfiguration
 ```
 
-- - - - - - - - 
+---
+
 # Function Builder
 
-```swift
+```
 @_functionBuilder struct CommandsBuilder
 @_functionBuilder struct SceneBuilder
 @_functionBuilder struct ToolbarContentBuilder
@@ -252,12 +143,131 @@ protocol WidgetConfiguration
 @_functionBuilder struct WidgetBundleBuilder
 ```
 
+---
+
+# Classes
+
+```
+open class UIHostingController<Content> : UIViewController where Content : View
+```
+---
+
+# Enums
+
+```
+@frozen enum AccessibilityLabeledPairRole
+@frozen enum Axis : Int8, CaseIterable, CustomStringConvertible, Equatable, Hashable,: RawRepresentable
+```
+
+```
+@frozen enum ContentMode : Hashable, CaseIterable
+```
+
+```
+@frozen enum Edge : Int8, CaseIterable, Equatable, Hashable, RawRepresentable
+```
+
+```
+@frozen enum ExclusiveGesture.Value: Equatable where First.Value : Equatable, Second.Value : Equatable
+```
+
+```
+@frozen enum Image.Orientation : UInt8, CaseIterable, Hashable, RawRepresentable
+```
+
+```
+@frozen enum Path.Element : Equatable
+```
+
+```
+@frozen enum SequenceGesture.Value
+```
+
+```
+@frozen enum TextAlignment : Hashable, CaseIterable
+```
+
+```
+enum AccessibilityAdjustmentDirection: Equatable, Hashable
+```
+
+```
+enum BlendMode: Equatable, Hashable
+```
+
+```
+enum Color.RGBColorSpace : Equatable, Hashable
+enum ColorRenderingMode : Equatable, Hashable
+enum ColorSchemeContrast : CaseIterable, Equatable, Hashable
+enum ColorScheme : CaseIterable, Equatable, Hashable
+enum ContentSizeCategory : Hashable, CaseIterable
+enum CoordinateSpace : Equatable, Hashable
+```
+
+```
+enum DropOperation : Equatable, Hashable
+```
+
+```
+enum EditMode: Equatable, Hashable
+```
+
+```
+enum Font.TextStyle : CaseIterable, Equatable, Hashable
+enum Font.Leading: Equatable, Hashable
+enum Font.Design : Hashable
+```
+
+```
+enum GridItem.Size
+```
+
+```
+enum Image.TemplateRenderingMode: Equatable, Hashable
+enum Image.Scale: Equatable, Hashable
+enum Image.Interpolation: Equatable, Hashable
+enum Image.ResizingMode: Equatable, Hashable
+```
+
+```
+enum LayoutDirection : Hashable, CaseIterable
+enum LegibilityWeight : Hashable
+```
+
+```
+enum NavigationBarItem.TitleDisplayMode : Equatable, Hashable
+enum NSUserActivity.TypedPayloadError : Error
+```
+
+```
+enum PopoverAttachmentAnchor
+enum PreviewLayout
+enum PreviewPlatform: Equatable, Hashable
+```
+
+```
+enum RoundedCornerStyle: Equatable, Hashable
+```
+
+```
+enum ScenePhase : Comparable, Hashable
+```
+
+```
+enum Text.TruncationMode: Equatable, Hashable
+enum Text.Case: Equatable, Hashable
+```
+
+```
+enum UserInterfaceSizeClass: Equatable, Hashable
+```
+
 - - - - - - - - 
 # Structures
 
 ## Frozen Structures
 
-```swift
+```
 @frozen struct Alignment : Equatable
 @frozen struct Anchor<Value>
 @frozen struct Anchor.Source
@@ -275,19 +285,19 @@ extension AppStorage where Value : ExpressibleByNilLiteral
 @frozen struct Axis.Set : OptionSet
 ```
 
-```swift
+```
 @frozen struct BackgroundStyle : ShapeStyle
 @frozen @propertyWrapper @dynamicMemberLookup struct Binding<Value> : DynamicProperty
 ```
 
-```swift
+```
 @frozen struct Capsule : Shape, InsettableShape
 @frozen struct Circle : Shape, InsettableShape
 @frozen struct Color : Hashable, CustomStringConvertible, View, ShapeStyle
 @frozen struct ContainerRelativeShape : Shape, InsettableShape
 ```
 
-```swift
+```
 @frozen struct Edge.Set : OptionSet
 
 @frozen struct EdgeInsets : Equatable
@@ -307,14 +317,14 @@ extension EdgeInsets : Animatable
 @frozen struct ExclusiveGesture<First, Second> : Gesture where First : Gesture, Second : Gesture
 ```
 
-```swift
+```
 @frozen struct FillStyle : Equatable
 @frozen struct Font : Hashable
 @frozen struct Font.Weight : Hashable
 @frozen struct ForegroundStyle : ShapeStyle
 ```
 
-```swift
+```
 @frozen struct GeometryReader<Content> : View where Content : View
 @frozen struct GestureMask : OptionSet
 
@@ -334,26 +344,26 @@ extension Group : View where Content : View
 extension Group : Commands where Content : Commands
 ```
 
-```swift
+```
 @frozen struct HStack<Content> : View where Content : View
 @frozen struct HorizontalAlignment : Equatable
 ```
 
-```swift
+```
 @frozen struct Image : Equatable: View
 @frozen struct ImagePaint : ShapeStyle
 ```
 
-```swift
+```
 @frozen struct LinearGradient : ShapeStyle, View
 @frozen struct LocalizedStringKey : Equatable, ExpressibleByStringInterpolation
 ```
 
-```swift
+```
 @frozen struct MatchedGeometryProperties : OptionSet
 ```
 
-```swift
+```
 @frozen struct ModifiedContent<Content, Modifier>
 extension ModifiedContent where Content : _Widget, Modifier : _WidgetModifier
 extension ModifiedContent where Modifier == AccessibilityAttachmentModifier
@@ -370,12 +380,12 @@ extension ModifiedContent where Modifier == AccessibilityAttachmentModifier
 extension ModifiedContent where Modifier == AccessibilityAttachmentModifier
 ```
 
-```swift
+```
 @frozen @propertyWrapper struct Namespace : DynamicProperty
 @frozen struct Namespace.ID : Hashable
 ```
 
-```swift
+```
 @propertyWrapper @frozen struct ObservedObject<ObjectType> : DynamicProperty where ObjectType : ObservableObject
 @dynamicMemberLookup @frozen struct ObservedObject.Wrapper
 
@@ -383,12 +393,12 @@ extension ModifiedContent where Modifier == AccessibilityAttachmentModifier
 extension OffsetShape : InsettableShape where Content : InsettableShape
 ```
 
-```swift
+```
 @frozen struct Path : Equatable, LosslessStringConvertible, Shape
 @frozen struct ProjectionTransform : Equatable
 ```
 
-```swift
+```
 @frozen struct RadialGradient : ShapeStyle, View
 @frozen struct Rectangle : Shape, InsettableShape
 
@@ -398,7 +408,7 @@ extension RotatedShape : InsettableShape where Content : InsettableShape
 @frozen struct RoundedRectangle : Shape, InsettableShape
 ```
 
-```swift
+```
 @frozen struct SafeAreaRegions : OptionSet
 @frozen struct ScaledShape<Content> : Shape where Content : Shape
 
@@ -425,30 +435,30 @@ extension State where Value : ExpressibleByNilLiteral
 @frozen @propertyWrapper struct StateObject<ObjectType> : DynamicProperty where ObjectType : ObservableObject
 ```
 
-```swift
+```
 @frozen struct Text : Equatable, View
 @frozen struct Transaction
 @frozen struct TransformedShape<Content> : Shape where Content : Shape
 @frozen struct TupleView<T> : View
 ```
 
-```swift
+```
 @frozen struct UnitPoint : Hashable
 extension UnitPoint : Animatable
 ```
 
-```swift
+```
 @frozen struct VStack<Content> : View where Content : View
 @frozen struct VerticalAlignment : Equatable
 ```
 
-```swift
+```
 @frozen struct ZStack<Content> : View where Content : View
 ```
 
 ---
 
-```swift
+```
 struct AccessibilityActionKind : Equatable
 struct AccessibilityAttachmentModifier : ViewModifier
 struct AccessibilityChildBehavior : Hashable
@@ -457,7 +467,7 @@ struct ActionSheet
 struct Alert
 ```
 
-```swift
+```
 struct BorderlessButtonMenuStyle : MenuStyle
 struct BorderlessButtonStyle : PrimitiveButtonStyle
 
@@ -468,7 +478,7 @@ extension Button where Label == PrimitiveButtonStyleConfiguration.Label
 struct ButtonStyleConfiguration
 ```
 
-```swift
+```
 struct CircularProgressViewStyle : ProgressViewStyle
 
 struct ColorPicker<Label> : View where Label : View
@@ -481,7 +491,7 @@ struct CompactDatePickerStyle : DatePickerStyle
 struct ContextMenu<MenuItems> where MenuItems : View
 ```
 
-```swift
+```
 struct DatePicker<Label> : View where Label : View
 struct DatePickerComponents : OptionSet
 struct DefaultButtonStyle : PrimitiveButtonStyle
@@ -513,13 +523,13 @@ struct DropInfo
 struct DropProposal
 ```
 
-```swift
+```
 struct EditButton : View
 struct EmptyCommands : Commands
 struct EnvironmentValues : CustomStringConvertible
 ```
 
-```swift
+```
 @propertyWrapper struct FetchRequest<Result> : DynamicProperty where Result : NSFetchRequestResult
 extension FetchRequest where Result : NSManagedObject
 
@@ -541,7 +551,7 @@ extension ForEach where Data == Range<Int>, ID == Int, Content : View
 struct Form<Content> : View where Content : View
 ```
 
-```swift
+```
 struct GeometryProxy
 struct GraphicalDatePickerStyle : DatePickerStyle
 struct GridItem
@@ -556,23 +566,23 @@ struct GroupBoxStyleConfiguration.Content : View
 struct GroupedListStyle : ListStyle
 ```
 
-```swift
+```
 struct HoverEffect
 ```
 
-```swift
+```
 struct IconOnlyLabelStyle : LabelStyle
 struct InlinePickerStyle : PickerStyle
 struct InsetGroupedListStyle : ListStyle
 struct InsetListStyle : ListStyle
 ```
 
-```swift
+```
 struct KeyEquivalent : ExpressibleByExtendedGraphemeClusterLiteral
 struct KeyboardShortcut
 ```
 
-```swift
+```
 struct Label<Title, Icon> : View where Title : View, Icon : View
 extension Label where Title == Text, Icon == Image
 extension Label where Title == LabelStyleConfiguration.Title, Icon == LabelStyleConfiguration.Icon
@@ -597,7 +607,7 @@ struct LocalizedStringKey.StringInterpolation : StringInterpolationProtocol
 struct LongPressGesture : Gesture
 ```
 
-```swift
+```
 struct MagnificationGesture : Gesture
 
 struct Menu<Label, Content> : View where Label : View, Content : View
@@ -615,7 +625,7 @@ extension NavigationLink where Label == Text
 struct NavigationView<Content> : View where Content : View
 ```
 
-```swift
+```
 struct OpenURLAction
 struct OutlineGroup<Data, ID, Parent, Leaf, Subgroup> where Data : RandomAccessCollection, ID : Hashable
 extension OutlineGroup where ID == Data.Element.ID, Parent : View, Parent == Leaf, Subgroup == DisclosureGroup<Parent, OutlineSubgroupChildren>, Data.Element : Identifiable
@@ -625,7 +635,7 @@ extension OutlineGroup : View where Parent : View, Leaf : View, Subgroup : View
 struct OutlineSubgroupChildren : View
 ```
 
-```swift
+```
 struct PageIndexViewStyle : IndexViewStyle
 struct PageIndexViewStyle.BackgroundDisplayMode
 struct PageTabViewStyle : TabViewStyle
@@ -653,14 +663,14 @@ struct ProgressViewStyleConfiguration.Label : View
 struct ProgressViewStyleConfiguration.CurrentValueLabel : View 
 ```
 
-```swift
+```
 struct RedactionReasons : OptionSet
 struct ReferenceFileDocumentConfiguration<Document> where Document : ReferenceFileDocument
 struct RotationGesture : Gesture
 struct RoundedBorderTextFieldStyle : TextFieldStyle
 ```
 
-```swift
+```
 @propertyWrapper struct ScaledMetric<Value> : DynamicProperty where Value : BinaryFloatingPoint
 
 struct ScrollView<Content> : View where Content : View
@@ -691,7 +701,7 @@ extension Stepper where Label == Text
 struct SwitchToggleStyle : ToggleStyle
 ```
 
-```swift
+```
 struct TabView<SelectionValue, Content> : View where SelectionValue : Hashable, Content : View
 extension TabView where SelectionValue == Int
 
@@ -722,7 +732,7 @@ struct ToolbarItemGroup<Content> : ToolbarContent where Content : View
 struct ToolbarItemPlacement
 ```
 
-```swift
+```
 @propertyWrapper struct UIApplicationDelegateAdaptor<DelegateType> : DynamicProperty where DelegateType : NSObject, DelegateType : UIApplicationDelegate
 extension UIApplicationDelegateAdaptor where DelegateType : ObservableObject
 
@@ -730,17 +740,17 @@ struct UIViewControllerRepresentableContext<Representable> where Representable :
 struct UIViewRepresentableContext<Representable> where Representable : UIViewRepresentable
 ```
 
-```swift
+```
 struct ViewDimensions : Equatable
 ```
 
-```swift
+```
 struct WheelDatePickerStyle : DatePickerStyle
 struct WheelPickerStyle : PickerStyle
 struct WindowGroup<Content> : Scene where Content : View
 ```
 
-```swift
+```
 extension Never : Gesture, Scene, WidgetConfiguration, ToolbarContent, CustomizableToolbarContent, View
 extension Optional : Gesture where Wrapped : Gesture
 extension Optional : View where Wrapped : View
@@ -1123,4 +1133,3 @@ WidgetConfiguration
 - EmptyWidgetConfiguration
 - Never
 ```
-  
