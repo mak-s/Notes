@@ -31,7 +31,7 @@ See [Evolving the Swift Workgroup](https://www.swift.org/blog/evolving-swift-pro
   ```swift
   <each Result>
   ```
-  See [Gemeralized APIs using parameter packs](https://developer.apple.com/videos/play/wwdc2023/10168/) 
+  See [Generalized APIs using parameter packs](https://developer.apple.com/videos/play/wwdc2023/10168/) 
  
  - Macros `macro`
    ```swift
