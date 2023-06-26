@@ -1,6 +1,6 @@
 # Whats new in Swift
 ## WWDC 2023
-[What's new in Swift](https://developer.apple.com/videos/play/wwdc2023/10164/)
+[What's new in Swift - WWDC23][What's new in Swift]
 
 ---
 ### Swift Project Updates:
@@ -10,7 +10,7 @@ swift.org/swift-evolution
   - Vision Documents
 - Ecosystem Streeting Group
 
-See [Evolving the Swift Workgroup](https://www.swift.org/blog/evolving-swift-project-workgroups/)
+See [Evolving the Swift Workgroup][Evolving the Swift Workgroup]
 
 ---
 ### Expressive Code:
@@ -31,7 +31,7 @@ See [Evolving the Swift Workgroup](https://www.swift.org/blog/evolving-swift-pro
   ```swift
   <each Result>
   ```
-  See [Generalized APIs using parameter packs](https://developer.apple.com/videos/play/wwdc2023/10168/) 
+  See [Generalized APIs using parameter packs  - WWDC23][Generalized APIs using parameter packs]
  
  - Macros `macro`
    ```swift
@@ -206,14 +206,14 @@ See [Evolving the Swift Workgroup](https://www.swift.org/blog/evolving-swift-pro
    - Macros integrate seamlessly into the development environment
 
    See: 
-   - [Expand on Swift macros](https://developer.apple.com/videos/play/wwdc2023/10167/)
-   - [Write Swift macros](https://developer.apple.com/videos/play/wwdc2023/10166)
+   - [Expand on Swift macros - WWDC23][Expand on Swift macros]
+   - [Write Swift macros - WWDC23][Write Swift macros]
 
 ---
 ### Swift Everywhere:
 
 #### __Swift Foundation__
-- Open source Foundation project, written in swift. See [The Future of Foundation](https://www.swift.org/blog/future-of-foundation/)
+- Open source Foundation project, written in swift. See [The Future of Foundation][The Future of Foundation]
   - FoundationEssentials
   - FoundationInternationalization
   - FoundationObjCCompatibility
@@ -346,7 +346,7 @@ To disable copy, `~Copyable` can be used on Struct and Enum declaration.
   - use c++ APIs directly from Swift (occasional annotation required)
   - expose most Swift APIs directly to C++ (no annotation required)
 
-  See [Mix Swift and C++](https://developer.apple.com/videos/play/wwdc2023/10172)
+  See [Mix Swift and C++ - WWDC23][Mix Swift and C++]
 
 ___
 
@@ -443,15 +443,40 @@ Swift Concurrency
 - Abstract model provides customization points for tasks and actors
 
 For more, see:
-- [Swift Concurrency: Behind the Scenes](https://developer.apple.com/videos/play/wwdc2021/10254)
-- [Beyond the basics of structured concurrency](https://developer.apple.com/videos/play/wwdc2023/10170)
+- [Swift Concurrency: Behind the Scenes - WWDC21][Swift Concurrency: Behind the Scenes]
+- [Beyond the basics of structured concurrency - WWDC23][Beyond the basics of structured concurrency]
 
 ___
 
 Use case: C++ - Swift Interoperability
 
-[__FoundationDB__](https://www.foundationdb.org)
+[__FoundationDB__][FoundationDB]
 - large cross-platform C++ code base
 - heavy use of asynchronous programming based on C++ features
 - distributed actor runtime providing deterministic simulation
 
+---
+
+## Reference
+
+- [What's new in Swift - WWDC23][What's new in Swift]
+- [Evolving the Swift Workgroup][Evolving the Swift Workgroup]
+- [Generalized APIs using parameter packs - WWDC23][Generalized APIs using parameter packs]
+- [Expand on Swift macros - WWDC23][Expand on Swift macros]
+- [Write Swift macros - WWDC23][Write Swift macros]
+- [The Future of Foundation][The Future of Foundation]
+- [Mix Swift and C++ - WWDC23][Mix Swift and C++]
+- [Swift Concurrency: Behind the Scenes - WWDC21][Swift Concurrency: Behind the Scenes]
+- [Beyond the basics of structured concurrency - WWDC23][Beyond the basics of structured concurrency]
+- [FoundationDB][FoundationDB]
+
+[What's new in Swift]: https://developer.apple.com/videos/play/wwdc2023/10164/
+[Evolving the Swift Workgroup]: https://www.swift.org/blog/evolving-swift-project-workgroups/
+[Generalized APIs using parameter packs]: https://developer.apple.com/videos/play/wwdc2023/10168/
+[Expand on Swift macros]: https://developer.apple.com/videos/play/wwdc2023/10167/
+[Write Swift macros]: https://developer.apple.com/videos/play/wwdc2023/10166
+[The Future of Foundation]: https://www.swift.org/blog/future-of-foundation/
+[Mix Swift and C++]: https://developer.apple.com/videos/play/wwdc2023/10172
+[Swift Concurrency: Behind the Scenes]: https://developer.apple.com/videos/play/wwdc2021/10254
+[Beyond the basics of structured concurrency]: https://developer.apple.com/videos/play/wwdc2023/10170
+[FoundationDB]: https://www.foundationdb.org
