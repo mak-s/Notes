@@ -1,0 +1,2 @@
+Service,Description,API,NOTE
+App Store Receipts,Validate app and In-App Purchase receipts with the App Store.,App Store Receipts 1.0–1.7,"Receipts are deprecated. To validate In-App Purchases on your server without using receipts, call the App Store Server API to get Apple-signed transaction and subscription information for your customers, or verify the AppTransaction and Transaction signed data that your app obtains. You can also get the same signed transaction and subscription information from the App Store Server Notifications V2 endpoint."
