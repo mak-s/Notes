@@ -1,0 +1,19 @@
+Title,Description,URL
+App License Delivery SDK,Secure the installation of alternative distribution apps on iOS or iPadOS devices by vending licenses from your web server.,https://developer.apple.com/documentation/AppLicenseDeliverySDK
+Apple Pay Merchant Token Usage Information API,Add details about your merchant token usage information package.,https://developer.apple.com/documentation/ApplePayMerchantTokenUsageInformation
+Apple Pencil,"Enhance your iPad app’s user experience by supporting drawing, handwriting, and other features of Apple Pencil.",
+Apple silicon,Get the resources you need to create software for Macs with Apple silicon.,https://developer.apple.com/documentation/apple-silicon
+Enterprise Program API,Automate the tasks you perform on the Apple Developer website.,https://developer.apple.com/documentation/EnterpriseProgramAPI
+HTTP Live Streaming,"Send audio and video to iOS, tvOS, and macOS devices.",https://developer.apple.com/documentation/HTTP-Live-Streaming
+Human Interface Guidelines,The HIG contains guidance and best practices that can help you design a great experience for any Apple platform.,https://developer.apple.com/design/human-interface-guidelines/
+Mac Catalyst,Create a version of your iPad app that users can run on a Mac device.,https://developer.apple.com/documentation/UIKit/mac-catalyst
+MusicKitJS,"MusicKit on the Web brings Apple Music to your website — with songs, music videos, radio stations, and full access to the Apple Music API. And now with MusicKit Web Components, you can build richer integrations with less code, faster.",https://js-cdn.music.apple.com/musickit/v3/docs/index.html?path=/story/introduction--page
+Professional Video Applications,"Exchange data with Final Cut Pro, and create effects plug-ins for Final Cut Pro and Motion.",
+QuickTime File Format,"An object-oriented file format for the storage and exchange of digital media between devices, applications, and operating systems.",
+Safari app extensions,Learn how Safari app extensions extend the web-browsing experience in Safari by leveraging web technologies and native code.,
+SecureElementCredential,Allow access to credentials inside the Secure Element on device.,https://developer.apple.com/documentation/SecureElementCredential
+TVML,Use Apple TV Markup Language to create individual pages inside of a client-server app.,https://developer.apple.com/documentation/TVML
+USD,An efficient and scalable way to represent 3D scenes.,https://developer.apple.com/documentation/USD
+Vision,Apply computer vision algorithms to perform a variety of tasks on input images and videos.,https://developer.apple.com/documentation/Vision
+visionOS,Create a new universe of apps and games for Apple Vision Pro.,
+watchOS apps,"Build watchOS apps that combine complications, notifications, and Siri to create a personal experience on Apple Watch.",https://developer.apple.com/documentation/watchOS-Apps
