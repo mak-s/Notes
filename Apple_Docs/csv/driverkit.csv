@@ -1,0 +1,13 @@
+Framework,Description,DriverKit,macOS,iOS,iPadOS
+AudioDriverKit,Develop drivers for audio devices.,DriverKit 21.0+,,,
+BlockStorageDeviceDriverKit,Develop drivers for custom storage devices that communicate with the driver using custom protocols.,DriverKit 21.0+,,,
+DriverKit,Develop device drivers that run in user space.,DriverKit 19.0+,macOS 10.15+,iOS 16.0+,iPadOS 16.0+
+HIDDriverKit,"Develop drivers for human-interface devices, such as keyboards, pointing devices, and digitizers like pens and touch pads.",DriverKit 19.0+,macOS 10.15+,,
+MIDIDriverKit,Develop drivers for MIDI devices.,DriverKit 24.0+,,,
+NetworkingDriverKit,Develop drivers for Ethernet networking devices.,DriverKit 19.0+,,,
+PCIDriverKit,Develop device drivers for Peripheral Component Interconnect (PCI) accessories.,DriverKit 19.0+,macOS 11.1+,,
+SCSIControllerDriverKit,Develop drivers for SCSI protocol-based devices.,DriverKit 20.4+,,,
+SCSIPeripheralsDriverKit,Develop drivers for peripherals that use SCSI Block Command and Multimedia Command protocols.,DriverKit 22.0+,,,
+SerialDriverKit,Develop drivers for serial I/O devices connected to your Mac.,DriverKit 19.0+,,,
+USBDriverKit,Develop drivers for USB-based devices.,DriverKit 19.0+,,,
+USBSerialDriverKit,Develop drivers for serial USB devices connected to your Mac.,DriverKit 19.0+,,,
