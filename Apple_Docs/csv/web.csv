@@ -1,0 +1,8 @@
+Technology,Description,Framework
+Apple Pay on the Web,Support Apple Pay on your website with JavaScript-based APIs.,"Safari Desktop 10.0+, Safari Mobile 10.0+"
+CKTool JS,Manage your CloudKit containers and databases from JavaScript.,CKTool JS 1.2.15+
+CloudKit JS,Provide access from your web app to your CloudKit app’s containers and databases.,CloudKit JS 1.0+
+LivePhotosKit JS,Play Live Photos on the web.,LivePhotosKit JS 1.0+
+MapKit JS,"Embed interactive Apple Maps on your website, annotate points of interest, and perform georelated searches.",MapKit JS 5.0+
+visionOS,Create a new universe of apps and games for Apple Vision Pro.,visionOS 1.0+
+WebKit JS,"Access and modify DOM elements within a webpage, including touch events and visual effects.","Safari Desktop 9.0+, Safari Mobile 9.0+"
