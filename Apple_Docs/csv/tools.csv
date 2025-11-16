@@ -1,0 +1,13 @@
+Title,Description,URL
+DocC,Produce rich API reference documentation and interactive tutorials for your Swift framework or package.,https://www.swift.org/documentation/docc/
+ResearchKit,ResearchKit is an open source software framework that makes it easy to create apps for medical research or for other research projects.,https://github.com/ResearchKit
+Installer JS,Manage and customize the installation and distribution experience.,https://developer.apple.com/documentation/installer_js
+PackageDescription,"Create reusable code, organize it in a lightweight way, and share it across your projects and with other developers.",https://developer.apple.com/documentation/PackageDescription
+Reality Composer Pro,"Build, create, and design 3D content for your RealityKit apps.",https://developer.apple.com/documentation/RealityComposerPro
+Safari Developer Features,"Inspect, debug, and test web content in Safari, in other apps, and on other devices including iPhone and iPad.",https://developer.apple.com/documentation/safari-developer-tools
+Sample Code Library,Enhance and expand your knowledge of Apple technologies by exploring the full library of sample code projects.,https://developer.apple.com/documentation/SampleCode
+Swift packages,"Create reusable code, organize it in a lightweight way, and share it across Xcode projects and with other developers.",https://developer.apple.com/documentation/Xcode/swift-packages
+Swift Playgrounds,"Learn to write apps, repurpose sample code, create, and share learning experiences in Swift Playgrounds.",https://developer.apple.com/documentation/swift-playgrounds
+Technology Overviews,Learn about the wide range of technologies you use to develop software for Apple platforms.,https://developer.apple.com/documentation/TechnologyOverviews
+Xcode,"Build, test, and submit your app with Apple’s integrated development environment.",https://developer.apple.com/documentation/Xcode
+Xcode Cloud,"Automatically build, test, and distribute your apps with Xcode Cloud to verify changes and create high-quality apps.",https://developer.apple.com/documentation/Xcode/Xcode-Cloud
